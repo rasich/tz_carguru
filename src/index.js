@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import App from './app';
+import ErrorBoundry from './components/error-boundry';
+
+import Service from './services/service';
+import ServiceContext from './services/service-context';
+
+
+import {BrowserRouter as Router} from "react-router-dom";
+import {Provider} from 'react-redux';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import store from './redux/store';
+const service = new Service(); 
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  <Provider store={store}>
+    <ErrorBoundry>
+      <ServiceContext.Provider value={service}>
+        <Router>
+          <App/>
+        </Router>
+      </ServiceContext.Provider>
+    </ErrorBoundry>
+  </Provider>
+,document.getElementById('root'));

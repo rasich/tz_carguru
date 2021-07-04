@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot');
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff') format('woff'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Light';
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot');
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Light.woff') format('woff'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin reg {
+  font-family: 'Avenir Next Cyr Regular', sans-serif;
+  font-weight: 300;
+}
+
+@mixin light {
+  font-family: 'Avenir Next Cyr Light', sans-serif;
+  font-weight: 100;
+}

@@ -1,0 +1,17 @@
+.third {
+  height: calc(100vh - 42px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.third-messages {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  overflow-y: auto;
+}
+.third-message {
+  margin: 5px 0;
+}

@@ -1,0 +1,160 @@
+.footer 
+  background-color: $bgc-dark
+  color: #fff
+  padding: 59px 0 70px 0
+  font-size: 16px
+  &-block
+    display: flex
+    margin-bottom: 148px
+    &__nav
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 55px
+    &__contacts
+      display: flex
+      justify-content: space-between
+    &__remark
+      display: flex
+      align-items: center
+  &-new
+    display: flex
+    margin-bottom: 40px
+    &s
+      flex-grow: 0.365
+      box-shadow: inset -1px 0px 0px rgba(255, 255, 255, 0.2)
+      padding-top: 2px
+      padding-right: 33px
+      margin-right: 30px
+      &__title
+        font-size: 30px
+        line-height: 35px
+        margin-bottom: 62px
+    &:last-child
+      margin-bottom: 0px
+    &__date
+      width: 60px
+      color: rgba(255, 255, 255, 0.5)
+      line-height: 20px
+      margin-right: 50px
+    &__title
+      width: 240px
+      line-height: 19px
+      color: #fff
+      -webkit-transition: .2s
+      transition: .2s
+      line-height: 20px
+      &:hover
+        cursor: pointer
+        color: rgba(255, 255, 255, 0.5)
+  &-info
+    flex-grow: 3
+  &-nav
+    &__item
+      color: #fff
+      -webkit-transition: .2s
+      transition: .2s
+      margin-right: 20px
+      &:hover
+        color: rgba(255, 255, 255, 0.5)
+      &:last-child
+        margin-right: 0
+  &-select
+    width: 108px
+    height: 34px
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    border-radius: 5px
+    outline: none
+    position: relative
+    cursor: pointer
+    user-select: none
+    margin-top: 1px
+    &__value 
+      padding: 8px 11px
+      display: block
+      -webkit-transition: .2s;
+      transition: .2s;
+      &:hover
+        opacity: .5
+    &:focus &__dropdown 
+      display: block
+    &__dropdown 
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      list-style-type: none
+      border: 1px solid rgba(255, 255, 255, 0.4)
+      border-radius: 5px
+      color: #fff
+      background-color: rgb(47, 48, 89)
+      display: none
+      z-index: 10
+      padding: 0
+    &__option 
+      padding: 6px 12px
+      &:hover 
+        background-color: rgba(255, 255, 255, 0.2)
+  &-contact
+    color: #fff
+    display: block
+    -webkit-transition: .2s
+    transition: .2s
+    &:hover
+      color: rgba(255, 255, 255, .5)
+    &s
+      font-size: 30px
+      line-height: 35px
+    &__phone
+      margin-bottom: 2px
+    &__mail
+      margin-bottom: 35px
+    &__address
+      font-size: 16px
+      line-height: 20px
+  &-button
+    &s
+      margin-top: 6px
+      & a
+        display: inline-block
+        height: 54px
+        &:first-child
+          margin-right: 8px
+    &:first-child
+      margin-right: 8px
+  &-remark
+    flex-grow: 3
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__info
+      flex-grow: 0.95
+      & a
+        color: #fff
+        -webkit-transition: .2s
+        transition: .2s
+        margin-right: 20px
+        &:hover
+          color: rgba(255, 255, 255, 0.5)
+    &__social
+      border: 1px solid rgba(255, 255, 255, 0.1)
+      border-radius: 5px
+      width: 45px
+      height: 45px
+      display: flex
+      align-items: center
+      justify-content: center
+      -webkit-transition: .2s
+      transition: .2s
+      margin: 0 5px
+      cursor: pointer
+      &:hover img
+        opacity: .5
+      &s
+        display: flex
+    &__author
+      color: #fff
+      -webkit-transition: .2s
+      transition: .2s
+      &:hover
+        color: rgba(255, 255, 255, 0.5)

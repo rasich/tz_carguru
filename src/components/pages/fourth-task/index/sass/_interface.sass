@@ -1,0 +1,36 @@
+body 
+  +reg
+  color: $text-color
+  box-sizing: border-box
+
+a
+  text-decoration: none
+
+img
+  pointer-events: none
+  user-select: none
+
+.container
+  width: 1290px
+  margin-left: auto
+  margin-right: auto
+
+
+.button
+  width: 162px
+  height: 54px
+  display: inline-block
+  -webkit-transition: .3s
+  transition: .3s
+  &-ios 
+    background: url(../img/btn/ios.png)
+    // margin-right: 2px
+    &__light
+      background: url(../img/btn/ios-light.png)
+      // margin-right: 8px
+  &-android 
+    background: url(../img/btn/android.png)
+    &__light
+      background: url(../img/btn/android-light.png)
+  &:hover
+    opacity: .7

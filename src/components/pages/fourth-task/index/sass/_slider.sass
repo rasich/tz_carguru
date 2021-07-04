@@ -1,0 +1,88 @@
+.slider
+  padding-top: 66px
+  box-shadow: inset 0px -1px 0px #ECE8F0;
+  &-header
+    display: flex
+    margin-bottom: 75px
+    &__item
+      flex-grow: 1
+      &-active
+        flex-grow: 3.45
+        margin-right: 30px
+        & .slider-header__title
+          margin-right: 44px
+    &__block
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+    &__title
+      font-family: Avenir Next Cyr Light
+      font-size: 70px
+      display: inline-block
+      margin-right: 39px
+      letter-spacing: -2px
+    &__arrow
+      display: inline-block
+      flex-grow: 1
+      height: 3px
+      background-color: $text-color-red
+      position: relative
+      margin-top: -1px
+      &:after
+        content: ''
+        height: 67px
+        width: 67px
+        border: 3px solid $text-color-red
+        border-bottom: none
+        border-left: none
+        display: block
+        position: absolute
+        right: 13px
+        top: -34px
+        transform: rotate(45deg)
+    &__subtitle
+      width: 170px
+      font-size: 16px
+      line-height: 20px
+
+  &-main
+    display: flex
+    align-items: flex-start
+    &__content
+      padding-top: 6px
+      margin-right: 315px
+    &__title
+      font-family: Avenir Next Cyr Light
+      font-size: 70px
+      width: 478px
+      line-height: 70px
+      letter-spacing: -2px
+      margin-bottom: 71px
+    &__buttons
+      & a
+        display: inline-block
+        height: 54px
+        &:first-child
+          margin-right: 10px
+    &__phone
+      display: inline-block
+      padding: 10px
+      padding-bottom: 0
+      border: 2px solid #ECE8F0;
+      border-bottom: none 
+      border-radius: 58px 58px 0 0
+      position: relative
+      &::before
+        content: ''
+        width: 190px
+        height: 30px
+        background-color: #fff
+        display: block
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        border-radius: 0 0 10px 10px 
+      & img
+        margin-bottom: -2px
+        border-radius: 50px 50px 0 0 

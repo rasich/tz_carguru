@@ -1,0 +1,1357 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Light';
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Avenir Next Cyr Regular', sans-serif;
+  font-weight: 300;
+  color: #2F3059;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container {
+  width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  width: 162px;
+  height: 54px;
+  display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button-ios {
+  background: url(../img/btn/ios.png);
+}
+
+.button-ios__light {
+  background: url(../img/btn/ios-light.png);
+}
+
+.button-android {
+  background: url(../img/btn/android.png);
+}
+
+.button-android__light {
+  background: url(../img/btn/android-light.png);
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+.header {
+  padding: 40px 0 36px 0;
+}
+
+.header-button {
+  height: 74px;
+  width: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ECE8F0;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.header-button__logo {
+  border: none;
+}
+
+.header-button__logo img {
+  margin-top: 3px;
+}
+
+.header-button__menu {
+  height: 69px;
+  width: 69px;
+  cursor: pointer;
+}
+
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.promo {
+  margin-bottom: 40px;
+}
+
+.promo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 183px;
+}
+
+.promo-block__title {
+  font-family: Avenir Next Cyr Light;
+  margin: 0;
+  font-size: 100px;
+  font-weight: 100;
+  color: #2F3059;
+  letter-spacing: -3px;
+  line-height: 110px;
+}
+
+.promo-block__title span {
+  color: #E01254;
+  display: block;
+}
+
+.promo-block__total {
+  font-size: 30px;
+  margin-right: 76px;
+}
+
+.promo-car {
+  margin: 0 17px 0 19px;
+}
+
+.promo-cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.promo-car__before {
+  background-image: url(../img/promo/background.png);
+  background-position: right;
+  -webkit-box-flex: 0.45;
+      -ms-flex-positive: 0.45;
+          flex-grow: 0.45;
+  height: 148px;
+  margin-top: -11px;
+}
+
+.promo-car__after {
+  background-image: url(../img/promo/background.png);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 148px;
+  margin-top: -10px;
+}
+
+.total-title {
+  line-height: 35px;
+  margin-top: 13px;
+  color: #E01254;
+}
+
+.total-price {
+  margin: 1px 0 30px 0;
+}
+
+.total-price__number {
+  font-family: 'Avenir Next Cyr Light', sans-serif;
+  font-weight: 100;
+  font-size: 70px;
+  color: #E01254;
+  letter-spacing: -2px;
+  margin-right: 18px;
+}
+
+.total-price__units {
+  display: inline-block;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.total-price__units-euro {
+  display: block;
+  width: 56px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(47, 48, 89, 0.6);
+}
+
+.total-subtitle {
+  font-size: 16px;
+  margin-bottom: 39px;
+  width: 200px;
+  line-height: 20px;
+}
+
+.total-subtitle a {
+  color: #E01254;
+  margin-left: 4px;
+}
+
+.total-buttons a {
+  display: inline-block;
+  height: 54px;
+}
+
+.total-buttons a:first-child {
+  margin-right: 10px;
+}
+
+@media (min-width: 1920px) and (max-width: 3199.98px) {
+  .promo-car {
+    margin: 0 19px 0 20px;
+  }
+  .promo-car__before {
+    -webkit-box-flex: 0.597;
+        -ms-flex-positive: 0.597;
+            flex-grow: 0.597;
+  }
+}
+
+@media (min-width: 3200px) {
+  .promo-car__before {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+.features {
+  overflow-x: auto;
+  padding: 56px 0px;
+}
+
+.features::-webkit-scrollbar {
+  width: 0;
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 78px;
+}
+
+.features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 20px;
+}
+
+.features-item__img-first {
+  margin-top: -1px;
+  margin-right: 41px;
+}
+
+.features-item__img-second {
+  margin-top: 3px;
+  margin-left: 24px;
+  margin-right: 36px;
+}
+
+.features-item__img-third {
+  margin-left: 32px;
+  margin-right: 46px;
+}
+
+.features-item__text {
+  width: 180px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 8px;
+}
+
+.slider {
+  padding-top: 66px;
+  -webkit-box-shadow: inset 0px -1px 0px #ECE8F0;
+          box-shadow: inset 0px -1px 0px #ECE8F0;
+}
+
+.slider-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 75px;
+}
+
+.slider-header__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.slider-header__item-active {
+  -webkit-box-flex: 3.45;
+      -ms-flex-positive: 3.45;
+          flex-grow: 3.45;
+  margin-right: 30px;
+}
+
+.slider-header__item-active .slider-header__title {
+  margin-right: 44px;
+}
+
+.slider-header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.slider-header__title {
+  font-family: Avenir Next Cyr Light;
+  font-size: 70px;
+  display: inline-block;
+  margin-right: 39px;
+  letter-spacing: -2px;
+}
+
+.slider-header__arrow {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 3px;
+  background-color: #E01254;
+  position: relative;
+  margin-top: -1px;
+}
+
+.slider-header__arrow:after {
+  content: '';
+  height: 67px;
+  width: 67px;
+  border: 3px solid #E01254;
+  border-bottom: none;
+  border-left: none;
+  display: block;
+  position: absolute;
+  right: 13px;
+  top: -34px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.slider-header__subtitle {
+  width: 170px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.slider-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slider-main__content {
+  padding-top: 6px;
+  margin-right: 315px;
+}
+
+.slider-main__title {
+  font-family: Avenir Next Cyr Light;
+  font-size: 70px;
+  width: 478px;
+  line-height: 70px;
+  letter-spacing: -2px;
+  margin-bottom: 71px;
+}
+
+.slider-main__buttons a {
+  display: inline-block;
+  height: 54px;
+}
+
+.slider-main__buttons a:first-child {
+  margin-right: 10px;
+}
+
+.slider-main__phone {
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 0;
+  border: 2px solid #ECE8F0;
+  border-bottom: none;
+  border-radius: 58px 58px 0 0;
+  position: relative;
+}
+
+.slider-main__phone::before {
+  content: '';
+  width: 190px;
+  height: 30px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 0 0 10px 10px;
+}
+
+.slider-main__phone img {
+  margin-bottom: -2px;
+  border-radius: 50px 50px 0 0;
+}
+
+.cars {
+  background-color: #FAF9FB;
+  padding: 80px 0 17px 0;
+}
+
+.cars-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 630px;
+      flex-basis: 630px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cars-item {
+  margin-bottom: 103px;
+  margin-right: -2px;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  height: 302px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: scale(1) perspective(0px) rotateX(0deg);
+          transform: scale(1) perspective(0px) rotateX(0deg);
+}
+
+.cars-item:hover {
+  opacity: .9;
+  -webkit-transform: scale(1.01) perspective(0px) rotateX(0deg);
+          transform: scale(1.01) perspective(0px) rotateX(0deg);
+}
+
+.cars-item:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transform: scale(0.97) perspective(350px) rotateX(2deg);
+          transform: scale(0.97) perspective(350px) rotateX(2deg);
+}
+
+.cars-item:nth-child(2) .cars-item__img {
+  margin-left: 51px;
+}
+
+.cars-item:nth-child(3) .cars-item__img {
+  margin-left: 73px;
+}
+
+.cars-item:nth-child(4) .cars-item__img {
+  margin-left: 55px;
+}
+
+.cars-item:nth-child(5) .cars-item__img {
+  margin-left: 16px;
+}
+
+.cars-item:nth-child(6) .cars-item__img {
+  margin-left: 53px;
+}
+
+.cars-item__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.cars-item__title {
+  font-size: 30px;
+  width: 200px;
+  line-height: 37px;
+  margin-right: 21px;
+}
+
+.cars-item__price-title {
+  font-size: 20px;
+  color: #E01254;
+  margin-bottom: 3px;
+}
+
+.cars-item__price-number {
+  font-family: 'Avenir Next Cyr Light', sans-serif;
+  font-weight: 100;
+  font-size: 55px;
+  color: #E01254;
+  letter-spacing: -2px;
+  margin-right: 17px;
+}
+
+.cars-item__price-units {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.cars-item__price-units_euro {
+  display: block;
+  width: 38px;
+  border-bottom: 1px solid rgba(47, 48, 89, 0.6);
+  margin-bottom: -1px;
+}
+
+.map {
+  height: 711px;
+  position: relative;
+}
+
+.map-custom {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-block {
+  width: 410px;
+  height: 600px;
+  background-color: #fff;
+  margin-top: 55px;
+}
+
+.map-block__header {
+  -webkit-box-shadow: inset 0px -1px 0px #ECE8F0;
+          box-shadow: inset 0px -1px 0px #ECE8F0;
+  padding: 25px 0 16px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map-block__switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  margin: 0 17px 0 18px;
+}
+
+.map-block__input {
+  display: none;
+}
+
+.map-block__input:checked + .map-block__slider:before {
+  -webkit-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+.map-block__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ECE8F0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 12px;
+  height: 24px;
+  width: 48px;
+}
+
+.map-block__slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #E01254;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.map-block__body {
+  padding-left: 40px;
+}
+
+.map-block__title {
+  font-family: 'Avenir Next Cyr Light', sans-serif;
+  font-weight: 100;
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: -2px;
+  margin: 35px 0 21px 0;
+}
+
+.map-block__subtitle {
+  width: 170px;
+  font-size: 16px;
+  line-height: 19px;
+  line-height: 20px;
+  margin-bottom: 62px;
+}
+
+.map-block__info {
+  color: #E01254;
+}
+
+.map-block__info-title {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 13px;
+}
+
+.map-block__info-count {
+  font-family: 'Avenir Next Cyr Light', sans-serif;
+  font-weight: 100;
+  font-size: 70px;
+  vertical-align: super;
+  float: left;
+  line-height: 57px;
+  letter-spacing: -2px;
+  margin-right: 12px;
+}
+
+.map-block__info-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ECE8F0;
+  margin-top: -2px;
+}
+
+.map-block__info-img img {
+  margin-top: -4px;
+  margin-right: -3px;
+}
+
+.footer {
+  background-color: #2F3059;
+  color: #fff;
+  padding: 59px 0 70px 0;
+  font-size: 16px;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 148px;
+}
+
+.footer-block__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.footer-block__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-block__remark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.footer-news {
+  -webkit-box-flex: 0.365;
+      -ms-flex-positive: 0.365;
+          flex-grow: 0.365;
+  -webkit-box-shadow: inset -1px 0px 0px rgba(255, 255, 255, 0.2);
+          box-shadow: inset -1px 0px 0px rgba(255, 255, 255, 0.2);
+  padding-top: 2px;
+  padding-right: 33px;
+  margin-right: 30px;
+}
+
+.footer-news__title {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 62px;
+}
+
+.footer-new:last-child {
+  margin-bottom: 0px;
+}
+
+.footer-new__date {
+  width: 60px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 20px;
+  margin-right: 50px;
+}
+
+.footer-new__title {
+  width: 240px;
+  line-height: 19px;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+  line-height: 20px;
+}
+
+.footer-new__title:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-info {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.footer-nav__item {
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin-right: 20px;
+}
+
+.footer-nav__item:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-nav__item:last-child {
+  margin-right: 0;
+}
+
+.footer-select {
+  width: 108px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 1px;
+}
+
+.footer-select__value {
+  padding: 8px 11px;
+  display: block;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-select__value:hover {
+  opacity: .5;
+}
+
+.footer-select:focus .footer-select__dropdown {
+  display: block;
+}
+
+.footer-select__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  list-style-type: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2f3059;
+  display: none;
+  z-index: 10;
+  padding: 0;
+}
+
+.footer-select__option {
+  padding: 6px 12px;
+}
+
+.footer-select__option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-contact {
+  color: #fff;
+  display: block;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-contact:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-contacts {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.footer-contact__phone {
+  margin-bottom: 2px;
+}
+
+.footer-contact__mail {
+  margin-bottom: 35px;
+}
+
+.footer-contact__address {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-buttons {
+  margin-top: 6px;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  height: 54px;
+}
+
+.footer-buttons a:first-child {
+  margin-right: 8px;
+}
+
+.footer-button:first-child {
+  margin-right: 8px;
+}
+
+.footer-remark {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-remark__info {
+  -webkit-box-flex: 0.95;
+      -ms-flex-positive: 0.95;
+          flex-grow: 0.95;
+}
+
+.footer-remark__info a {
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin-right: 20px;
+}
+
+.footer-remark__info a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-remark__social {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer-remark__social:hover img {
+  opacity: .5;
+}
+
+.footer-remark__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-remark__author {
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-remark__author:hover {
+  color: rgba(255, 255, 255, 0.5);
+}

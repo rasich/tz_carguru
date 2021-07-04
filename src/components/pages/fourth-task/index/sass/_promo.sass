@@ -1,0 +1,86 @@
+.promo
+  margin-bottom: 40px
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 183px
+
+    &__title 
+      font-family: Avenir Next Cyr Light;
+      margin: 0
+      font-size: 100px 
+      font-weight: 100
+      color: $text-color
+      letter-spacing: -3px
+      line-height: 110px
+      span 
+        color: $text-color-red
+        display: block
+    &__total
+      font-size: 30px
+      margin-right: 76px
+
+  &-car
+    margin: 0 17px 0 19px
+    &s
+      display: flex
+      justify-content: center
+    &__before
+      background-image: url(../img/promo/background.png)
+      background-position: right
+      flex-grow: 0.45
+      height: 148px
+      margin-top: -11px
+    &__after
+      background-image: url(../img/promo/background.png)
+      flex-grow: 1
+      height: 148px
+      margin-top: -10px
+    
+.total
+  &-title
+    line-height: 35px
+    margin-top: 13px
+    color: $text-color-red
+  &-price
+    margin: 1px 0 30px 0
+    &__number
+      +light
+      font-size: 70px
+      color: $text-color-red
+      letter-spacing: -2px
+      margin-right: 18px
+    &__units
+      display: inline-block
+      transform: translateY(6px)
+      &-euro
+        display: block
+        width: 56px
+        padding-bottom: 3px
+        border-bottom: 1px solid rgba(47, 48, 89, .6)
+  &-subtitle
+    font-size: 16px
+    margin-bottom: 39px
+    width: 200px
+    line-height: 20px
+    a 
+      color: $text-color-red
+      margin-left: 4px
+  &-buttons
+    & a
+      display: inline-block
+      height: 54px
+      &:first-child
+        margin-right: 10px
+
+@media (min-width: 1920px) and (max-width: 3199.98px)
+  .promo-car
+    margin: 0 19px 0 20px
+    &__before
+      flex-grow: 0.597
+
+@media (min-width: 3200px)
+  .promo-car__before
+    flex-grow: 1
+  

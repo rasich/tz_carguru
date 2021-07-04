@@ -1,0 +1,8 @@
+.started {
+  width: 100%;
+  min-height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
