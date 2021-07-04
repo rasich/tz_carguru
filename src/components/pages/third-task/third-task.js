@@ -7,17 +7,16 @@ import './third-task.css';
 import {connect} from 'react-redux';
 import {thirdSocket, thirdSocketClear} from '../../../redux/actions';
 
-const client = new WebSocket("ws://websocket.crgr.dev/example");
+let client;
 
 class ThirdTask extends Component {
 
   componentDidMount() {
-    client.onopen = () => {
-      console.log('WebSocket Client Connected');
-    };
+    client = new WebSocket("ws://websocket.crgr.dev/example");
+
     client.onmessage = (event) => {
       const message = JSON.parse(event.data);
-
+      
       if (message) {
         this.props.thirdSocket(message)
       }
